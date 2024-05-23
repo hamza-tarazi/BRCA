@@ -1,0 +1,60 @@
+{% extends "partials/base.html" %}
+{% load static %}
+{% block content %}
+<main id="main">
+  <section id="about" class="py-5">
+    <div class="container">
+      <header class="section-header text-center mb-5">
+        <h3>Internal Audit</h3>
+        <p>
+          Internal auditing is a crucial component of corporate governance, risk management, and internal controls within an organization. At BRCA Consultancy, we specialize in providing strategic internal auditing solutions designed to enhance operational efficiency, mitigate risks, and safeguard organizational assets.
+        </p>
+      </header>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p>
+            Internal auditing is a crucial component of corporate governance, risk management, and internal controls within an organization. At BRCA Consultancy, we specialize in providing strategic internal auditing solutions designed to enhance operational efficiency, mitigate risks, and safeguard organizational assets.
+          </p>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="{% static 'img/internalaudit.jpg' %}" alt="Internal Audit" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="services" class="py-5 bg-light">
+    <div class="container">
+      <h3 class="text-center mb-4">Our Internal Audit Services Include:</h3>
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <strong>Risk Assessment and Management:</strong> We conduct comprehensive risk assessments to identify and prioritize key risks facing your organization. Our internal audit team works closely with management to develop risk mitigation strategies and internal control frameworks tailored to your specific business objectives.
+            </li>
+            <li class="list-group-item">
+              <strong>Process Improvement:</strong> Our internal auditors analyze your organization's processes and procedures to identify inefficiencies, bottlenecks, and areas for improvement. We provide actionable recommendations to streamline operations, enhance productivity, and drive cost savings.
+            </li>
+            <li class="list-group-item">
+              <strong>Compliance Monitoring:</strong> We help ensure that your organization complies with relevant laws, regulations, and industry standards by conducting regular compliance audits. Our internal audit team monitors compliance with internal policies and procedures, as well as external regulatory requirements, to mitigate legal and regulatory risks.
+            </li>
+            <li class="list-group-item">
+              <strong>Fraud Detection and Prevention:</strong> We assist in detecting and preventing fraud by conducting forensic audits, investigating suspicious activities, and implementing fraud prevention measures. Our internal audit team helps strengthen internal controls and establish a culture of integrity and accountability within your organization.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="call-to-action" class="py-5 text-center">
+    <div class="container">
+      <h3>Get in Touch</h3>
+      <p>
+        Partner with BRCA Consultancy for strategic internal auditing solutions that add value to your organization. Contact us today to learn more about how we can assist you in strengthening your internal controls, mitigating risks, and achieving your business objectives through effective internal auditing. Let us help you optimize your organization's performance and achieve sustainable growth through strategic internal auditing.
+      </p>
+      <a class="btn btn-primary" href="{% url 'core:contact' %}">Contact us Today</a>
+    </div>
+  </section>
+</main>
+{% endblock content %}
